@@ -122,20 +122,30 @@
                         <div class="title">
                             <h2 class="title__text js-letter">Journey &<br>Skills</h2>
                             <div class="border js-letter"><span></span><span class="js-letter"></span></div>
+                            <div class='skills_text'>
+                                <p class="skills_para js-letter">I began my journey 5 years from now at the age of 16. With my
+                                    <font color="#ff4d5a">first language being C++</font>. My mentor used to give me various real world problems and brainstorming ideas to solve them was very thrilling for me. I got very proficient in
+                                    <font color="#ff4d5a">problem solving and C++</font>. To measure my competence I took various tests in
+                                    <font color="#ff4d5a">HackerRank and CodeChef</font>.<br><br> Later I<span id="dots" style="display:inline"></span>...</span><span id="more" style="display:none">got interested in the concept of 
+									<font color="#ff4d5a">automation and Machine Learning</font> . To delve deeper into these topics I Learned 
+									<font color="#ff4d5a">Python</font> and then 
+									<font color="#ff4d5a">Selenium</font> with basics of 
+									<font color="#ff4d5a">HTML,CSS & JS</font> to make a Bot that attended my classes for me (online due to lockdown) giving me more time for my silly projects.
+									<font color="#ff4d5a">Selenium</font> also helped me 
+									<font color="#ff4d5a">scrape the web</font> for my 
+									<font color="#ff4d5a">personal ML datasets for training</font>.<br><br> That was the start of my ML journey. I took an udemy course to get the basics down, then worked on various small projects to get a hold on libraries like 
+									<font color="#ff4d5a">NLTK , TF and SKlearn</font>. I have also learned 
+									<font color="#ff4d5a">Mysql</font> to manage my datasets for ML (you can look at my git or kaggle for more). Recently I have been contributing to some open source projects like
+									<font color="#ff4d5a">EvalAI from CloudCV and Polaris form Liber Space Foundation</font>. Which has forced me to get familiar with elements like 
+									<font color="#ff4d5a">GitLab, Docker, AWS and CI’s like Tox</font>.</span></p>
+                                <button onclick="expand_text()" id="myBtn" class="myBtn">Read more</button>
+                                <a href="./resume/Resume.pdf" id="CV" class="myBtn">Download CV</a>
+                            </div>
                         </div>
                         <a class="image image--about">
                             <div class="image__over">
                                 <div class="image__cover"></div>
                                 <div class="image__cover"></div>
-                                <!-- <div class='skills_text'>
-                                    <p class="skills_para js-letter">I began my journey 5 years from now at the age of 16. With my first language being C++. My mentor used to give me various real world problems and brainstorming ideas to solve them was very thrilling for me. I got very
-                                        proficient in problem solving and C++. to measure my competence I took various tests in HackerRank and CodeChef.<br><br> Later I got interested in the concept of automation and Machine Learning. To delve deeper
-                                        into these topics I Learned Python and then Selenium with basics of HTML,CSS & JS to make a Bot that attended my classes for me (online due to lockdown) giving me more time for my silly projects. Selenium also helped
-                                        me scrape the web for my personal ML datasets for training.<br><br> That was the start of my ML journey. I took an udemy course to get the basics down, then worked on various small projects to get a hold on libraries
-                                        like NLTK , TF and SKlearn. I have also learned Mysql to manage my datasets for ML (you can look at my git or kaggle for more). Recently I have been contributing to some open source projects like EvalAI from CloudCV
-                                        and Polaris form Liber Space Foundation. Which has forced me to get familiar with elements like GitLab, Docker, AWS and CI’s like Tox.
-                                    </p>
-                                </div> -->
                                 <div class="skill_table">
                                     <div class="column right">
                                         <div class="bars">
@@ -346,6 +356,23 @@
     <script src="./JS/parallax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
     <script src="./JS/common.min.js"></script>
+    <script>
+        function expand_text() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </body>
 
 </html>
