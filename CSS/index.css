@@ -1,4 +1,6 @@
 .about_para {
+    text-align: justify;
+    text-justify: inter-word;
     color: #fff;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -20,6 +22,8 @@
 }
 
 .skills_para {
+    text-align: justify;
+    text-justify: inter-word;
     color: #fff;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -133,4 +137,133 @@
 
 .skill_table .right .pro::before {
     width: 30%;
+}
+
+.project_tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.project_title {
+    font-size: 70%;
+}
+
+.cover {}
+
+.header {
+    text-align: left;
+}
+
+.tag {
+    font-size: 30%;
+}
+
+.link {
+    color: rgb(36, 168, 230);
+    font-size: 40%;
+}
+
+.description {
+    text-align: left;
+    font-size: 40%;
+}
+
+#completed {
+    left: 0%;
+}
+
+.completed {
+    display: grid;
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    margin-right: 15%;
+    margin-left: 5%;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: auto auto auto;
+    grid-row-gap: 7em; */
+    padding: 10px;
+}
+
+#work_in_progress {
+    left: 200%;
+}
+
+.work_in_progress {
+    display: grid;
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    margin-right: 15%;
+    margin-left: 5%;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 7em;
+    padding: 10px;
+}
+
+#open_source {
+    left: 200%;
+}
+
+.open_source {
+    display: grid;
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    margin-right: 15%;
+    margin-left: 5%;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 7em;
+    padding: 10px;
+}
+
+.type-1 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#comp {
+    background-color: white;
+    border: none;
+    color: #ff4d5a;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#wip {
+    background-color: #ff4d5a;
+    border: none;
+    color: white;
+    font-weight: normal;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#os {
+    background-color: #ff4d5a;
+    border: none;
+    color: white;
+    font-weight: normal;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

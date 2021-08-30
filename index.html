@@ -93,7 +93,6 @@
                         <a class="image image--works">
                             <div class="image__over">
                                 <div class="image__cover"></div>
-                                <div class="image__cover"></div>
                                 <div class='about_text'>
                                     <p class="about_para js-letter">Currently I am working on various small projects such as
                                         <font color="#ff4d5a">Elon-Effect </font>and
@@ -109,6 +108,7 @@
                                         <br><br>In this portfolio, you will find my
                                         <font color="#ff4d5a">Projects, Blog,</font> and all the things that I want to Brag about.</p>
                                 </div>
+                                <div class="image__cover"></div>
                             </div>
                             <div class="page-num">
                                 <p>01</p>
@@ -145,8 +145,7 @@
                         <a class="image image--about">
                             <div class="image__over">
                                 <div class="image__cover"></div>
-                                <div class="image__cover"></div>
-                                <div class="skill_table">
+                                <div class="skill_table js-letter">
                                     <div class="column right">
                                         <div class="bars">
                                             <div class="info">
@@ -262,6 +261,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="image__cover"></div>
                             </div>
                             <div class="page-num">
                                 <p>02</p>
@@ -273,17 +273,179 @@
                 <div class="section">
                     <div class="fullpage__slide">
                         <div class="title">
-                            <h2 class="title__text js-letter">Get In Touch</h2>
+                            <h2 class="title__text js-letter">Projects</h2>
                             <div class="border js-letter"><span></span><span class="js-letter"></span></div>
-                            <ul>
-                                <li class="js-letter"><a href="mailto:kuon609@gmail.com">kuon609@gmail.com</a></li>
-                                <li class="js-letter"><a href="https://www.wantedly.com/users/48483598" target="_blank">Wantedly</a></li>
-                                <li class="js-letter"><a href="https://twitter.com/Goldi69s" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                            </ul>
+                            <nav class="loacl-nav">
+                                <ul class="loacl-nav__list">
+                                    <li><button type="button" id="comp" class="comp" onclick="completed()">Completed</></button></li>
+                                    <li><button type="button" id="wip" class="wip" onclick="work_in_progress()">Work in Progress</button></li>
+                                    <li><button type="button" id="os" class="os" onclick="open_source()">Open Source</button></li>
+                                </ul>
+                            </nav>
                         </div>
                         <div class="image image--contact">
                             <div class="image__over">
                                 <div class="image__cover"></div>
+                                <div class="project_tiles js-letter">
+                                    <div class="image__cover" id="local_trans"></div>
+                                    <div class="completed" id="completed">
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">Athenaeum</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">Auto Class</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">IOT Home</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">ML</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">RPG GAME</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">SELENIUM TWITTER SCRAPER </h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="image__cover" id="local_trans"></div>
+                                    <div class="image__cover" id="local_trans"></div>
+                                    <div class="work_in_progress" id="work_in_progress">
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">Elon Effect</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">ML-FUNC</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">PORTFOLIO WEBSITE</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="image__cover" id="local_trans"></div>
+                                    <div class="image__cover" id="local_trans"></div>
+                                    <div class="open_source" id="open_source">
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">EvalAI</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project shadow type-1">
+                                            <div class="cover">
+                                                <div class="header">
+                                                    <h3 class="project_title">Polaris</h3>
+                                                    <p class="tag">Static Site Generator</p>
+                                                    <a class="link" href="https://abelljs.org">abelljs.org</a>
+                                                </div>
+                                            </div>
+                                            <div class="description">
+                                                <p>Abell is a static-site-generator to build JSON/Markdown/ or Static data based websites using the familiar syntax of HTML and JavaScript.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="image__cover" id="local_trans"></div>
+                                </div>
                                 <div class="image__cover"></div>
                             </div>
                             <div class="page-num">
@@ -327,7 +489,7 @@
             </div>
             <div class="star js-parallax-star">
                 <div class="layer" data-depth="0.1">
-                    <div class="star__img"><img src="./assets/img/star.svg"></div>
+                    <div class="star__img"><img src="./IMG/star.svg"></div>
                 </div>
             </div>
             <div class="sky-color"></div>
@@ -371,6 +533,86 @@
                 btnText.innerHTML = "Read less";
                 moreText.style.display = "inline";
             }
+        }
+    </script>
+    <script>
+        function completed() {
+            var x = document.getElementById("completed");
+            var y = document.getElementById("work_in_progress");
+            var z = document.getElementById("open_source");
+            var comp = document.getElementById("comp");
+            var wip = document.getElementById("wip");
+            var os = document.getElementById("os");
+            var local_trans = document.getElementById("local_trans");
+
+            x.style.left = "0%";
+            y.style.left = "100%";
+            z.style.left = "200%";
+
+            comp.style.backgroundColor = "white";
+            comp.style.color = "#ff4d5a";
+            comp.style.fontWeight = "bold";
+
+            wip.style.backgroundColor = "#ff4d5a";
+            wip.style.color = "white";
+            wip.style.fontWeight = "normal";
+
+            os.style.backgroundColor = "#ff4d5a";
+            os.style.color = "white";
+            os.style.fontWeight = "normal";
+
+        }
+
+        function work_in_progress() {
+            var x = document.getElementById("completed");
+            var y = document.getElementById("work_in_progress");
+            var z = document.getElementById("open_source");
+            var comp = document.getElementById("comp");
+            var wip = document.getElementById("wip");
+            var os = document.getElementById("os");
+            var local_trans = document.getElementById("local_trans");
+
+            x.style.left = "-300%";
+            y.style.left = "0%";
+            z.style.left = "100%";
+
+            comp.style.backgroundColor = "#ff4d5a";
+            comp.style.color = "white";
+            comp.style.fontWeight = "normal";
+
+            wip.style.backgroundColor = "white";
+            wip.style.color = "#ff4d5a";
+            wip.style.fontWeight = "bold";
+
+            os.style.backgroundColor = "#ff4d5a";
+            os.style.color = "white";
+            os.style.fontWeight = "normal";
+        }
+
+        function open_source() {
+            var x = document.getElementById("completed");
+            var y = document.getElementById("work_in_progress");
+            var z = document.getElementById("open_source");
+            var comp = document.getElementById("comp");
+            var wip = document.getElementById("wip");
+            var os = document.getElementById("os");
+            var local_trans = document.getElementById("local_trans");
+
+            x.style.left = "-300%";
+            y.style.left = "-300%";
+            z.style.left = "0%";
+
+            comp.style.backgroundColor = "#ff4d5a";
+            comp.style.color = "white";
+            comp.style.fontWeight = "normal";
+
+            wip.style.backgroundColor = "#ff4d5a";
+            wip.style.color = "white";
+            wip.style.fontWeight = "normal";
+
+            os.style.backgroundColor = "white";
+            os.style.color = "#ff4d5a";
+            os.style.fontWeight = "bold";
         }
     </script>
 </body>
