@@ -1,0 +1,117 @@
+.about_para {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.about_text {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    right: 20%;
+    left: 2%;
+}
+
+.skills_text {}
+
+.skills_para {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.skill_table {
+    color: #fff;
+    left: 2%;
+}
+
+.skill_table .right .bars {
+    margin-bottom: 15px;
+}
+
+.skill_table .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill_table .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skill_table .right .line {
+    height: 5px;
+    left: 2%;
+    width: 70%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skill_table .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ff4d5a;
+}
+
+.skill_table .right .cpp::before {
+    width: 90%;
+}
+
+.skill_table .right .python::before {
+    width: 60%;
+}
+
+.skill_table .right .html::before {
+    width: 60%;
+}
+
+.skill_table .right .css::before {
+    width: 50%;
+}
+
+.skill_table .right .js::before {
+    width: 70%;
+}
+
+.skill_table .right .ml::before {
+    width: 70%;
+}
+
+.skill_table .right .selenium::before {
+    width: 60%;
+}
+
+.skill_table .right .bash::before {
+    width: 40%;
+}
+
+.skill_table .right .mysql::before {
+    width: 60%;
+}
+
+.skill_table .right .docker::before {
+    width: 40%;
+}
+
+.skill_table .right .aws::before {
+    width: 60%;
+}
+
+.skill_table .right .photoshop::before {
+    width: 30%;
+}
+
+.skill_table .right .illustrator::before {
+    width: 30%;
+}
+
+.skill_table .right .pro::before {
+    width: 30%;
+}
