@@ -28,6 +28,8 @@
     <header><a class="name" href="./">Sahil</a>
         <div class="wrap">
             <div class="icons"><a href="https://twitter.com/XXOsahilOXX" target="_blank"><i class="fab fa-twitter"></i></a></div>
+            <div class="icons"><a href="https://github.com/thesloppyguy" target="_blank"><i class="fab fa-github"></i></a></div>
+            <div class="icons"><a href="https://www.linkedin.com/in/sahil-3776b51b9/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
             <div class="menuIcon js-menuBtn"></div>
         </div>
         <nav class="global-nav">
@@ -37,7 +39,6 @@
                 <li><a class="js-contact" href="./#skills">SKILLS</a></li>
                 <li><a class="js-contact" href="./#projects">PROJECTS</a></li>
                 <li><a class="js-contact" href="./#achievements">ACHIEVEMENTS</a></li>
-                <li class="global-nav__sns"><a href="https://twitter.com/Goldi69s" target="_blank"><i class="fab fa-twitter"></i></a></li>
             </ul>
         </nav>
         <div class="curtain"></div>
@@ -277,17 +278,21 @@
                             <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                             <nav class="loacl-nav">
                                 <ul class="loacl-nav__list">
-                                    <li><button type="button" id="comp" class="comp" onclick="completed()">Completed</></button></li>
-                                    <li><button type="button" id="wip" class="wip" onclick="work_in_progress()">Work in Progress</button></li>
-                                    <li><button type="button" id="os" class="os" onclick="open_source()">Open Source</button></li>
+                                    <li><button type="button" id="comp" class="comp" onclick="completed(); transition();">Completed</></button></li>
+                                    <li><button type="button" id="wip" class="wip" onclick="work_in_progress(); transition();">Work in Progress</button></li>
+                                    <li><button type="button" id="os" class="os" onclick="open_source(); transition();">Open Source</button></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="image image--contact">
                             <div class="image__over">
-                                <div class="image__cover"></div>
-                                <div class="project_tiles js-letter">
-                                    <div class="image__cover" id="local_trans"></div>
+                                <div class="image__cover "></div>
+
+                                <div class="project_tiles js-letter ">
+
+                                    <div class="local_transition-red lt" id="red_trans"></div>
+                                    <div class="local_transition-black lt" id="black_trans"></div>
+
                                     <div class="completed" id="completed">
 
                                         <div class="project shadow type-1">
@@ -358,7 +363,7 @@
                                         <div class="project shadow type-1">
                                             <div class="cover">
                                                 <div class="header">
-                                                    <h3 class="project_title">SELENIUM TWITTER SCRAPER </h3>
+                                                    <h3 class="project_title">ST-SCRAPER</h3>
                                                     <p class="tag">Static Site Generator</p>
                                                     <a class="link" href="https://abelljs.org">abelljs.org</a>
                                                 </div>
@@ -369,8 +374,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="image__cover" id="local_trans"></div>
-                                    <div class="image__cover" id="local_trans"></div>
+
                                     <div class="work_in_progress" id="work_in_progress">
 
                                         <div class="project shadow type-1">
@@ -402,7 +406,7 @@
                                         <div class="project shadow type-1">
                                             <div class="cover">
                                                 <div class="header">
-                                                    <h3 class="project_title">PORTFOLIO WEBSITE</h3>
+                                                    <h3 class="project_title">PORTFOLIO</h3>
                                                     <p class="tag">Static Site Generator</p>
                                                     <a class="link" href="https://abelljs.org">abelljs.org</a>
                                                 </div>
@@ -413,8 +417,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="image__cover" id="local_trans"></div>
-                                    <div class="image__cover" id="local_trans"></div>
+
                                     <div class="open_source" id="open_source">
 
                                         <div class="project shadow type-1">
@@ -444,9 +447,9 @@
                                         </div>
 
                                     </div>
-                                    <div class="image__cover" id="local_trans"></div>
+
                                 </div>
-                                <div class="image__cover"></div>
+                                <div class="image__cover "></div>
                             </div>
                             <div class="page-num">
                                 <p>03</p>
@@ -458,17 +461,25 @@
                 <div class="section">
                     <div class="fullpage__slide">
                         <div class="title">
-                            <h2 class="title__text js-letter">Get In Touch</h2>
+                            <h2 class="title__text js-letter">Recent <br>Achievements</h2>
                             <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                             <ul>
-                                <li class="js-letter"><a href="mailto:kuon609@gmail.com">kuon609@gmail.com</a></li>
-                                <li class="js-letter"><a href="https://www.wantedly.com/users/48483598" target="_blank">Wantedly</a></li>
-                                <li class="js-letter"><a href="https://twitter.com/Goldi69s" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                                <li class="js-letter"><a href="mailto:kuon609@gmail.com">Hacker-Rank</a></li>
+                                <li class="js-letter"><a href="https://www.wantedly.com/users/48483598" target="_blank">GitHub</a></li>
                             </ul>
                         </div>
                         <div class="image image--contact">
                             <div class="image__over">
                                 <div class="image__cover"></div>
+                                <div class="achievements">
+                                    <div class="achi-1">
+
+                                    </div>
+                                    <div class="achi-2">
+
+                                    </div>
+
+                                </div>
                                 <div class="image__cover"></div>
                             </div>
                             <div class="page-num">
@@ -515,6 +526,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./JS/jquery.fullPage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
     <script src="./JS/parallax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
     <script src="./JS/common.min.js"></script>
