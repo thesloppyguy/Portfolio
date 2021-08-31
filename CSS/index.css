@@ -304,3 +304,41 @@
     right: 200%;
     background: #072142;
 }
+
+.achievements_tiles {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.achievements {
+    position: absolute;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+.achi_1 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    top: 310px;
+    left: 0;
+    height: 194px;
+    width: 345px;
+    background: #1d1d1d;
+}
+
+.achi_2 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    top: 30px;
+    right: 0;
+    height: 194px;
+    width: 345px;
+    background: #1d1d1d;
+}
