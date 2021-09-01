@@ -770,6 +770,7 @@ img {
     margin: 0 0 0 auto;
     -webkit-box-shadow: none;
     box-shadow: none;
+    z-index: 1;
 }
 
 @media screen and (max-width: 420px) {
@@ -1404,7 +1405,7 @@ header .global-nav__sns a:last-child {
     font-weight: bold;
     letter-spacing: 0.1em;
     text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
-    color: #ff4d5a;
+    color: #fff;
     font-family: "futura_b";
 }
 

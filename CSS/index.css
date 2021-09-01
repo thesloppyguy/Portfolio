@@ -2,6 +2,7 @@
     text-align: justify;
     text-justify: inter-word;
     color: #fff;
+    font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.5;
     letter-spacing: 0.1em;
@@ -22,6 +23,7 @@
 }
 
 .skills_para {
+    font-weight: bold;
     text-align: justify;
     text-justify: inter-word;
     color: #fff;
@@ -45,7 +47,8 @@
 
 .skill_table {
     color: #fff;
-    left: 2%;
+    margin-top: 10px;
+    margin-left: 5%;
 }
 
 .skill_table .right .bars {
@@ -62,7 +65,7 @@
 }
 
 .skill_table .right span {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -80,7 +83,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: #ff4d5a;
+    background: #072142;
 }
 
 .skill_table .right .cpp::before {
@@ -88,7 +91,7 @@
 }
 
 .skill_table .right .python::before {
-    width: 60%;
+    width: 80%;
 }
 
 .skill_table .right .html::before {
@@ -96,27 +99,27 @@
 }
 
 .skill_table .right .css::before {
-    width: 50%;
+    width: 60%;
 }
 
 .skill_table .right .js::before {
-    width: 70%;
+    width: 50%;
 }
 
 .skill_table .right .ml::before {
-    width: 70%;
+    width: 80%;
 }
 
 .skill_table .right .selenium::before {
-    width: 60%;
+    width: 90%;
 }
 
 .skill_table .right .bash::before {
-    width: 40%;
+    width: 60%;
 }
 
 .skill_table .right .mysql::before {
-    width: 60%;
+    width: 80%;
 }
 
 .skill_table .right .docker::before {
@@ -124,19 +127,19 @@
 }
 
 .skill_table .right .aws::before {
-    width: 60%;
+    width: 40%;
 }
 
 .skill_table .right .photoshop::before {
-    width: 30%;
+    width: 60%;
 }
 
 .skill_table .right .illustrator::before {
-    width: 30%;
+    width: 50%;
 }
 
 .skill_table .right .pro::before {
-    width: 30%;
+    width: 50%;
 }
 
 .project_tiles {
@@ -157,6 +160,11 @@
     text-align: left;
     height: 1000px;
     width: 250px;
+    transition: 0.3s;
+}
+
+.type-1:hover {
+    transform: scale(1.05);
 }
 
 .cover {
@@ -314,14 +322,18 @@
 }
 
 .achievements {
-    position: absolute;
+    font-weight: bold;
+    text-shadow: 5px;
+    text position: absolute;
     overflow: hidden;
     margin-left: 5%;
     margin-right: 5%;
     padding: 20px;
+    transition: .3s
 }
 
 .achi_1 {
+    position: absolute;
     padding: 20px;
     font-size: 30px;
     text-align: left;
@@ -329,16 +341,52 @@
     left: 0;
     height: 194px;
     width: 345px;
-    background: #1d1d1d;
+    background: transparent;
+    z-index: 500;
+}
+
+.achi_1:hover {
+    transform: scale(1.3);
 }
 
 .achi_2 {
+    position: absolute;
     padding: 20px;
     font-size: 30px;
     text-align: left;
-    top: 30px;
+    top: 100px;
     right: 0;
     height: 194px;
     width: 345px;
-    background: #1d1d1d;
+    background: transparent;
+    z-index: 500;
+}
+
+.achi_2:hover {
+    transform: scale(1.3);
+}
+
+.readme {
+    color: #fff;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.achivement_title {
+    font-size: 18px;
+}
+
+.achievement_decs {
+    font-size: 11px;
+}
+
+.achi {
+    width: 50%;
+}
+
+.image {}
+
+.layers_size {
+    height: 150%;
+    width: 150%;
 }
