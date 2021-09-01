@@ -324,7 +324,7 @@
 .achievements {
     font-weight: bold;
     text-shadow: 5px;
-    text position: absolute;
+    position: absolute;
     overflow: hidden;
     margin-left: 5%;
     margin-right: 5%;
