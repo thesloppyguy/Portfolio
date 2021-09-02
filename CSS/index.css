@@ -388,3 +388,27 @@
     height: 150%;
     width: 150%;
 }
+
+.self_self {
+    background-image: url("../IMG/reile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.self_skills {
+    background-image: url("../IMG/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.self_tool {
+    background-image: url("../IMG/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.self_achi {
+    background-image: url("../IMG/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
