@@ -385,8 +385,8 @@
 }
 
 .layers_size {
-    height: 150%;
-    width: 150%;
+    height: 100%;
+    width: 100%;
 }
 
 .self_self {
@@ -412,3 +412,5 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media screen and (max-width: 800px) {}

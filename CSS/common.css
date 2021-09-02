@@ -1404,13 +1404,16 @@ header .global-nav__sns a:last-child {
     font-size: 6.4rem;
     font-weight: bold;
     letter-spacing: 0.1em;
-    text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
-    color: #fff;
+    text-shadow: 0 10px 15px rgba(36, 36, 36, 0.76);
+    color: #ffffff;
     font-family: "futura_b";
+    z-index: 1000;
 }
 
 @media screen and (max-width: 800px) {
     .moon__text {
+        margin-top: 50px;
+        margin-left: -20px;
         font-size: 3.2rem;
     }
 }
@@ -1604,7 +1607,7 @@ header .global-nav__sns a:last-child {
 }
 
 .moonlight__img {
-    background: url(../img/moonlight.svg) no-repeat;
+    background: url(../IMG/moonlight.svg) no-repeat;
     background-size: 100%;
 }
 
