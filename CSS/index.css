@@ -1,6 +1,7 @@
 .about_para {
     text-align: justify;
     text-justify: inter-word;
+    text-shadow: 0 10px 15px rgb(0, 0, 0);
     color: #fff;
     font-weight: bold;
     font-size: 1.5rem;
@@ -30,6 +31,7 @@
     font-size: 1.5rem;
     line-height: 1.5;
     letter-spacing: 0.1em;
+    text-shadow: 0 10px 15px rgb(0, 0, 0);
 }
 
 .myBtn {
@@ -49,6 +51,7 @@
     color: #fff;
     margin-top: 10px;
     margin-left: 5%;
+    text-shadow: 0 10px 15px rgb(0, 0, 0);
 }
 
 .skill_table .right .bars {
@@ -73,7 +76,7 @@
     height: 5px;
     left: 25%;
     width: 50%;
-    background: lightgrey;
+    background: #ff4d5a;
     position: relative;
 }
 
@@ -389,11 +392,13 @@
     width: 100%;
 }
 
+
+/* 
 .self_self {
-    background-image: url("../IMG/reile.jpg");
+    background-image: linear-gradient(321deg, rgba(63, 94, 251, 0.25) 43%, rgba(252, 70, 107, 0.25) 69%), url("../IMG/reile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .self_skills {
     background-image: url("../IMG/about.jpg");
@@ -401,14 +406,15 @@
     background-size: cover;
 }
 
-.self_tool {
+
+/* .self_tool {
     background-image: url("../IMG/contact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .self_achi {
-    background-image: url("../IMG/contact.jpg");
+    background-image: url("../IMG/Achiv.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

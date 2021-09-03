@@ -782,12 +782,12 @@ img {
 }
 
 .page-top .image__reile {
-    background: url(../img/reile.jpg) no-repeat center;
+    background: url(../IMG/reile.jpg) no-repeat center;
     background-size: cover;
 }
 
 .page-top .image__about {
-    background: url(../img/about.jpg) no-repeat center;
+    background: url(../IMG/about.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -1521,17 +1521,17 @@ header .global-nav__sns a:last-child {
 }
 
 .image--works {
-    background: url(../img/reile.jpg) no-repeat center;
+    background: url(../IMG/reile.jpg) no-repeat center;
     background-size: cover;
 }
 
 .image--about {
-    background: url(../img/about.jpg) no-repeat center;
+    background: url(../IMG/about.jpg) no-repeat center;
     background-size: cover;
 }
 
 .image--contact {
-    background: url(../img/contact.jpg) no-repeat center;
+    background: url(../IMG/contact.jpg) no-repeat center;
     background-size: cover;
 }
 
