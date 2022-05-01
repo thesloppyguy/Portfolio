@@ -151,101 +151,6 @@
     width: 50%;
 }
 
-.project_tiles {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.type-1 {
-    padding: 20px;
-    font-size: 20px;
-    text-align: left;
-    transition: 0.3s;
-}
-
-.type-1:hover {
-    transform: scale(1.05);
-}
-
-.cover {
-    position: relative;
-    border: 10px solid;
-    border-color: #ff4d5a;
-    background-size: cover;
-    background-position: center;
-    background-color: #ff4d5a;
-}
-
-.header {
-    font-weight: bold;
-}
-
-.tag {
-    font-size: 30%;
-}
-
-.link {
-    color: rgb(0, 0, 0);
-    font-size: 40%;
-}
-
-.description {
-    font-size: 35%;
-    position: relative;
-    overflow: hidden;
-    border: 10px solid;
-    border-color: #1d1d1d;
-    background-position: center;
-    background-color: #1d1d1d;
-}
-
-#completed {
-    left: 0%;
-}
-
-.completed {
-    position: relative;
-    overflow: hidden;
-    padding: 10px;
-    transition: .5s;
-}
-
-#work_in_progress {
-    vertical-align: top;
-    left: 200%;
-}
-
-.parent {
-    padding: 20px;
-}
-
-.child {
-    width: 100%;
-    float: left;
-    padding: 20px;
-}
-
-.project_tiles.div.ul {
-    columns: 3;
-}
-
-.project_tiles.div.ul.li {
-    width: 25%;
-    height: 30%;
-    margin-top: 10px;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-.work_in_progress {
-    position: relative;
-    overflow: hidden;
-    padding: 10px;
-    transition: .5s
-}
-
 #comp {
     background-color: white;
     border: none;
@@ -288,14 +193,6 @@
     height: 1000px;
     right: 200%;
     background: #072142;
-}
-
-.achievements_tiles {
-    /* display: grid;
-    grid-template-columns: 200px 200px;
-    grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; */
 }
 
 .achievements {
@@ -398,6 +295,12 @@
     background-color: #ff4d5a;
     color: #ffffff;
 }
+
+
+/* new shit */
+
+
+/* new shit ends */
 
 @media only screen and (max-width: 800px) {
     /* default iPad screens */
