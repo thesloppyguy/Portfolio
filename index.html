@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./JS/index.js" media="screen">
     <link rel="stylesheet" href="./CSS/jquery.fullPage.css">
     <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/mobile.css">
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
@@ -95,20 +97,20 @@
                         <a class="image image--works">
                             <div class="image__over self_self">
                                 <div class="image__cover"></div>
-                                <div class='about_text'>
+                                <div class='about_text image__over'>
                                     <p class="about_para js-letter">Currently I am working on various small projects such as
-                                        <font color="#ff4d5a">Elon-Effect </font>and
-                                        <font color="#ff4d5a">ML-FUNC</font> while contributing to some
-                                        <font color="#ff4d5a">Open Source Projects</font> like
-                                        <font color="#ff4d5a">EvalAI</font> from
-                                        <font color="#ff4d5a">Cloud CV</font> and
-                                        <font color="#ff4d5a">Polaris</font> from
-                                        <font color="#ff4d5a">Libre Space Foundation</font>. And will be
-                                        <font color="#ff4d5a">happy to work</font> as an intern for your company and help you with my skills and learn while doing so.
+                                        <font color="#d43f4b">Elon-Effect </font>and
+                                        <font color="#d43f4b">ML-FUNC</font> while contributing to some
+                                        <font color="#d43f4b">Open Source Projects</font> like
+                                        <font color="#d43f4b">EvalAI</font> from
+                                        <font color="#d43f4b">Cloud CV</font> and
+                                        <font color="#d43f4b">Polaris</font> from
+                                        <font color="#d43f4b">Libre Space Foundation</font>. And will be
+                                        <font color="#d43f4b">happy to work</font> as an intern for your company and help you with my skills and learn while doing so.
                                         <br><br>Pursuing
-                                        <font color="#ff4d5a">COMPUTER SCIENCE ENGINEERING</font> (2nd yr) at Acharya Institute of Technology, Bangalore.
+                                        <font color="#d43f4b">COMPUTER SCIENCE ENGINEERING</font> (2nd yr) at Acharya Institute of Technology, Bangalore.
                                         <br><br>In this portfolio, you will find my
-                                        <font color="#ff4d5a">Projects, Blog,</font> and all the things that I want to Brag about.</p>
+                                        <font color="#d43f4b">Projects, Blog,</font> and all the things that I want to Brag about.</p>
                                 </div>
                                 <div class="image__cover"></div>
                             </div>
@@ -122,146 +124,154 @@
                 <div class="section">
                     <div class="fullpage__slide">
                         <div class="title">
-                            <h2 class="title__text js-letter">Journey <br>& Skills</h2>
+                            <h2 class="title__text js-letter hidden-big">Journey <br>& Skills</h2>
+                            <h2 class="title__text js-letter show-big">Journey & Skills</h2>
                             <div class="border js-letter"><span></span><span class="js-letter"></span></div>
-                            <div class='skills_text'>
-                                <p class="skills_para js-letter">I began my journey 5 years from now at the age of 16. With my
-                                    <font color="#ff4d5a">first language being C++</font>. My mentor used to give me various real world problems and brainstorming ideas to solve them was very thrilling for me. I got very proficient in
-                                    <font color="#ff4d5a">problem solving and C++</font>. To measure my competence I took various tests in
-                                    <font color="#ff4d5a">HackerRank and CodeChef</font>.<br><br> Later I<span id="dots" style="display:inline"></span>...</span><span id="more" style="display:none">got interested in the concept of 
-									<font color="#ff4d5a">automation and Machine Learning</font> . To delve deeper into these topics I Learned 
-									<font color="#ff4d5a">Python</font> and then 
-									<font color="#ff4d5a">Selenium</font> with basics of 
-									<font color="#ff4d5a">HTML,CSS & JS</font> to make a Bot that attended my classes for me (online due to lockdown) giving me more time for my silly projects.
-									<font color="#ff4d5a">Selenium</font> also helped me 
-									<font color="#ff4d5a">scrape the web</font> for my 
-									<font color="#ff4d5a">personal ML datasets for training</font>.<br><br> That was the start of my ML journey. I took an udemy course to get the basics down, then worked on various small projects to get a hold on libraries like 
-									<font color="#ff4d5a">NLTK , TF and SKlearn</font>. I have also learned 
-									<font color="#ff4d5a">Mysql</font> to manage my datasets for ML (you can look at my git or kaggle for more). Recently I have been contributing to some open source projects like
-									<font color="#ff4d5a">EvalAI from CloudCV and Polaris form Liber Space Foundation</font>. Which has forced me to get familiar with elements like 
-									<font color="#ff4d5a">GitLab, Docker, AWS and CI’s like Tox</font>.</span></p>
-                                <button onclick="expand_text()" id="myBtn" class="myBtn">Read more</button>
-                                <a href="./resume/Resume.pdf" id="CV" class="myBtn">Download CV</a>
+                            <div class='skills_text '>
+
+                                <button id="s" class="myBtn skills" onclick="skills(); transition();">Skills</button>
+                                <button id="j" class="myBtn journey" onclick="journey(); transition();">Journey</button>
+                                <button onclick="window.location.href='./resume/Resume.pdf'" id="CV" class="myBtn">CV <i class="fa fa-download"></i></button>
                             </div>
                         </div>
                         <a class="image image--about">
                             <div class="image__over self_skills">
                                 <div class="image__cover"></div>
-                                <div class="skill_table js-letter">
+                                <div id='skill_table' class="skill_table js-letter">
                                     <div class="column right">
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">C/C++</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">C/C++</span>
                                                 <span style="color:#ff4d5a">90%</span>
                                             </div>
                                             <div class="line cpp">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">Python</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">Python</span>
                                                 <span style="color:#ff4d5a">80%</span>
                                             </div>
                                             <div class="line python">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">HTML</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">HTML</span>
                                                 <span style="color:#ff4d5a">60%</span>
                                             </div>
                                             <div class="line html">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">CSS</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">CSS</span>
                                                 <span style="color:#ff4d5a">60%</span>
                                             </div>
                                             <div class="line css">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142"> JavaScript</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff"> JavaScript</span>
                                                 <span style="color:#ff4d5a">60%</span>
                                             </div>
                                             <div class="line js">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">Machine Learning</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">Machine Learning</span>
                                                 <span style="color:#ff4d5a">80%</span>
                                             </div>
                                             <div class="line ml">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">Selenium</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">Selenium</span>
                                                 <span style="color:#ff4d5a">90%</span>
                                             </div>
                                             <div class="line selenium">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">Bash Scripting</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">Bash Scripting</span>
                                                 <span style="color:#ff4d5a">60%</span>
                                             </div>
                                             <div class="line bash">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">MySQL</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">MySQL</span>
                                                 <span style="color:#ff4d5a">80%</span>
                                             </div>
                                             <div class="line mysql">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">Docker</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">Docker</span>
                                                 <span style="color:#ff4d5a">40%</span>
                                             </div>
                                             <div class="line docker">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">AWS</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">AWS</span>
                                                 <span style="color:#ff4d5a">40%</span>
                                             </div>
                                             <div class="line aws">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">Adobe Photoshop</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">Adobe Photoshop</span>
                                                 <span style="color:#ff4d5a">60%</span>
                                             </div>
                                             <div class="line photoshop">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">Adobe Illustrator</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">Adobe Illustrator</span>
                                                 <span style="color:#ff4d5a">50%</span>
                                             </div>
                                             <div class="line illustrator">
                                             </div>
                                         </div>
                                         <div class="bars">
-                                            <div class="info">
-                                                <span style="color:#072142">Adobe Premiere Pro</span>
+                                            <div id='info' class="info">
+                                                <span style="color:#ffffff">Adobe Premiere Pro</span>
                                                 <span style="color:#ff4d5a">50%</span>
                                             </div>
                                             <div class="line pro">
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div id='skills_para' class='skills_para'>
+                                    <p class=" js-letter">I began my journey 5 years from now at the age of 16. With my
+                                        <font color="#ff4d5a">first language being C++</font>. My mentor used to give me various real world problems and brainstorming ideas to solve them was very thrilling for me. I got very proficient in
+                                        <font color="#ff4d5a">problem solving and C++</font>. To measure my competence I took various tests in
+                                        <font color="#ff4d5a">HackerRank and CodeChef</font>.<br><br> Later I got interested in the concept of
+                                        <font color="#ff4d5a">automation and Machine Learning</font> . To delve deeper into these topics I Learned
+                                        <font color="#ff4d5a">Python</font> and then
+                                        <font color="#ff4d5a">Selenium</font> with basics of
+                                        <font color="#ff4d5a">HTML,CSS & JS</font> to make a Bot that attended my classes for me (online due to lockdown) giving me more time for my silly projects.
+                                        <font color="#ff4d5a">Selenium</font> also helped me
+                                        <font color="#ff4d5a">scrape the web</font> for my
+                                        <font color="#ff4d5a">personal ML datasets for training</font>.<br><br> That was the start of my ML journey. I took an udemy course to get the basics down, then worked on various small projects to get a hold on libraries like
+                                        <font color="#ff4d5a">NLTK , TF and SKlearn</font>. I have also learned
+                                        <font color="#ff4d5a">Mysql</font> to manage my datasets for ML (you can look at my git or kaggle for more).
+                                        <!-- Recently I have been contributing to some open source projects like
+                                        <font color="#ff4d5a">EvalAI from CloudCV and Polaris form Liber Space Foundation</font>. Which has forced me to get familiar with elements like
+                                        <font color="#ff4d5a">GitLab, Docker, AWS and CI’s like Tox</font>. -->
+                                        </span>
+                                    </p>
                                 </div>
                                 <div class="image__cover"></div>
                             </div>
@@ -279,9 +289,8 @@
                             <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                             <nav class="loacl-nav">
                                 <ul class="loacl-nav__list">
-                                    <li><button type="button" id="comp" class="comp" onclick="completed(); transition();">Completed</></button></li>
-                                    <li><button type="button" id="wip" class="wip" onclick="work_in_progress(); transition();">Work in Progress</button></li>
-                                    <!-- <li><button type="button" id="os" class="os" onclick="open_source(); transition();">Open Source</button></li> -->
+                                    <li><button type="button" id="comp" class="comp" onclick="completed(); transition();">Completed</></button><button type="button" id="wip" class="wip " onclick="work_in_progress(); transition();">Work in Progress</button></li>
+
                                 </ul>
                             </nav>
                         </div>
@@ -289,12 +298,12 @@
                             <div class="image__over self_tool">
                                 <div class="image__cover "></div>
 
-                                <div class="project_tiles js-letter ">
+                                <div class="project_tiles js-letter parent">
 
                                     <div class="local_transition-red lt" id="red_trans"></div>
                                     <div class="local_transition-black lt" id="black_trans"></div>
 
-                                    <div class="completed" id="completed">
+                                    <div class="completed child" id="completed">
 
                                         <div class="project shadow type-1">
                                             <div class="cover">
@@ -374,9 +383,10 @@
                                             </div>
                                         </div>
 
+
                                     </div>
 
-                                    <div class="work_in_progress" id="work_in_progress">
+                                    <div class="work_in_progress child" id="work_in_progress">
 
                                         <div class="project shadow type-1">
                                             <div class="cover">
@@ -420,36 +430,6 @@
 
                                     </div>
 
-                                    <!-- <div class="open_source" id="open_source">
-
-                                        <div class="project shadow type-1">
-                                            <div class="cover">
-                                                <div class="header">
-                                                    <h3 class="project_title">EvalAI</h3>
-                                                    <p class="tag">Evaluation and Comparing Models with AI</p>
-                                                    <a class="link" href="https://github.com/Cloud-CV/EvalAI">&#128279 Cloud-CV-EvalAI</a>
-                                                </div>
-                                            </div>
-                                            <div class="description">
-                                                <p>EvalAI is an open source platform for evaluating and comparing machine learning (ML) and artificial intelligence (AI) algorithms at scale.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="project shadow type-1">
-                                            <div class="cover">
-                                                <div class="header">
-                                                    <h3 class="project_title">Polaris</h3>
-                                                    <p class="tag">Satellite Telemetry Analysis</p>
-                                                    <a class="link" href="https://gitlab.com/librespacefoundation/polaris/polaris">&#128279 LibreSF-Polaris</a>
-                                                </div>
-                                            </div>
-                                            <div class="description">
-                                                <p>Tool to analyze a satellite set of telemetry to understand links/dependencies among different subsystems.</p>
-                                            </div>
-                                        </div>
-
-                                    </div> -->
-
                                 </div>
                                 <div class="image__cover "></div>
                             </div>
@@ -473,7 +453,7 @@
                         <div class="image image--contact">
                             <div class="image__over self_achi">
                                 <div class="image__cover"></div>
-                                <div class="achievements_tiles js-letter ">
+                                <div class="achievements_tiles js-letter image__over">
 
                                     <div class="achievements achi_2 ">
                                         <div class="achivement_title">
@@ -568,15 +548,15 @@
         function completed() {
             var x = document.getElementById("completed");
             var y = document.getElementById("work_in_progress");
-            var z = document.getElementById("open_source");
+            // var z = document.getElementById("open_source");
             var comp = document.getElementById("comp");
             var wip = document.getElementById("wip");
-            var os = document.getElementById("os");
+            // var os = document.getElementById("os");
             var local_trans = document.getElementById("local_trans");
 
             x.style.left = "0%";
             y.style.left = "100%";
-            z.style.left = "200%";
+            // z.style.left = "200%";
 
             comp.style.backgroundColor = "white";
             comp.style.color = "#ff4d5a";
@@ -586,24 +566,24 @@
             wip.style.color = "white";
             wip.style.fontWeight = "normal";
 
-            os.style.backgroundColor = "#ff4d5a";
-            os.style.color = "white";
-            os.style.fontWeight = "normal";
+            // os.style.backgroundColor = "#ff4d5a";
+            // os.style.color = "white";
+            // os.style.fontWeight = "normal";
 
         }
 
         function work_in_progress() {
             var x = document.getElementById("completed");
             var y = document.getElementById("work_in_progress");
-            var z = document.getElementById("open_source");
+            // var z = document.getElementById("open_source");
             var comp = document.getElementById("comp");
             var wip = document.getElementById("wip");
-            var os = document.getElementById("os");
+            // var os = document.getElementById("os");
             var local_trans = document.getElementById("local_trans");
 
             x.style.left = "-300%";
             y.style.left = "0%";
-            z.style.left = "100%";
+            // z.style.left = "100%";
 
             comp.style.backgroundColor = "#ff4d5a";
             comp.style.color = "white";
@@ -613,35 +593,42 @@
             wip.style.color = "#ff4d5a";
             wip.style.fontWeight = "bold";
 
-            os.style.backgroundColor = "#ff4d5a";
-            os.style.color = "white";
-            os.style.fontWeight = "normal";
+            // os.style.backgroundColor = "#ff4d5a";
+            // os.style.color = "white";
+            // os.style.fontWeight = "normal";
+        }
+    </script>
+    <script>
+        function skills() {
+            var x = document.getElementById("skill_table");
+            var y = document.getElementById("skills_para");
+            var skills = document.getElementById("s");
+            var journey = document.getElementById("j");
+
+            x.style.display = "";
+            y.style.display = "none";
+            skills.style.backgroundColor = "white";
+            skills.style.color = "#ff4d5a";
+            skills.style.fontWeight = "bold";
+            journey.style.backgroundColor = "#ff4d5a";
+            journey.style.color = "white";
+            journey.style.fontWeight = "normal";
         }
 
-        function open_source() {
-            var x = document.getElementById("completed");
-            var y = document.getElementById("work_in_progress");
-            var z = document.getElementById("open_source");
-            var comp = document.getElementById("comp");
-            var wip = document.getElementById("wip");
-            var os = document.getElementById("os");
-            var local_trans = document.getElementById("local_trans");
+        function journey() {
+            var x = document.getElementById("skill_table");
+            var y = document.getElementById("skills_para");
+            var skills = document.getElementById("s");
+            var journey = document.getElementById("j");
 
-            x.style.left = "-300%";
-            y.style.left = "-300%";
-            z.style.left = "0%";
-
-            comp.style.backgroundColor = "#ff4d5a";
-            comp.style.color = "white";
-            comp.style.fontWeight = "normal";
-
-            wip.style.backgroundColor = "#ff4d5a";
-            wip.style.color = "white";
-            wip.style.fontWeight = "normal";
-
-            os.style.backgroundColor = "white";
-            os.style.color = "#ff4d5a";
-            os.style.fontWeight = "bold";
+            x.style.display = "none";
+            y.style.display = "inline-block";
+            skills.style.backgroundColor = "#ff4d5a";
+            skills.style.color = "white";
+            skills.style.fontWeight = "normal";
+            journey.style.backgroundColor = "white";
+            journey.style.color = "#ff4d5a";
+            journey.style.fontWeight = "bold";
         }
     </script>
 </body>
