@@ -211,7 +211,7 @@
     padding: 20px;
     font-size: 30px;
     text-align: left;
-    top: 50%;
+    top: 40%;
 }
 
 .achi_1:hover {
@@ -224,10 +224,23 @@
     font-size: 30px;
     text-align: left;
     left: 50%;
-    top: 40%;
+    top: 30%;
 }
 
 .achi_2:hover {
+    transform: scale(1.1);
+}
+
+.achi_3 {
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    left: 50%;
+    top: 15%;
+}
+
+.achi_3:hover {
     transform: scale(1.1);
 }
 
